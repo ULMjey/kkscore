@@ -6,7 +6,7 @@ var style__3 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("kk_per");
+    var value = ""
     var labelText = "";
     size = 0;
     var labelFont = "10px, sans-serif";
@@ -20,6 +20,14 @@ var style__3 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
+<<<<<<< HEAD
+    var style = [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(255,1,14,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+=======
     if (value >= 0.000000 && value <= 21.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 2.0 + size,
@@ -61,6 +69,7 @@ var style__3 = function(feature, resolution){
                               bufferWidth)
     })]
                     };
+>>>>>>> 3babf451a11e0c959dd4d68e8c470d4749bd73e3
 
     return style;
 };
