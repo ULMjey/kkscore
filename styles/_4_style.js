@@ -6,7 +6,7 @@ var style__4 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("kk_per");
+    var value = feature.get("ผู้�");
     var labelText = "";
     size = 0;
     var labelFont = "10px, sans-serif";
@@ -20,42 +20,42 @@ var style__4 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
-    if (value >= 0.000000 && value <= 21.000000) {
+    if (value >= 471.000000 && value <= 691.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 2.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(255,153,1,1.0)'})}),
+        image: new ol.style.Circle({radius: 10.0 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(17,229,31,0.5137254901960784)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 21.000000 && value <= 41.000000) {
+                    } else if (value >= 691.000000 && value <= 978.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 5.5 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(255,153,1,1.0)'})}),
+        image: new ol.style.Circle({radius: 17.5 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(17,229,31,0.5137254901960784)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 41.000000 && value <= 61.000000) {
+                    } else if (value >= 978.000000 && value <= 1366.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 9.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(255,153,1,1.0)'})}),
+        image: new ol.style.Circle({radius: 25.0 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(17,229,31,0.5137254901960784)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 61.000000 && value <= 81.000000) {
+                    } else if (value >= 1366.000000 && value <= 3374.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 12.5 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(255,153,1,1.0)'})}),
+        image: new ol.style.Circle({radius: 32.5 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(17,229,31,0.5137254901960784)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 81.000000 && value <= 100.000000) {
+                    } else if (value >= 3374.000000 && value <= 4986.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 16.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(255,153,1,1.0)'})}),
+        image: new ol.style.Circle({radius: 40.0 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(17,229,31,0.5137254901960784)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

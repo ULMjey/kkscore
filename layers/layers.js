@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([11237427.951072, 1503628.472390, 11271193.530258, 1526277.811515]);
+//ol.proj.get("EPSG:3857").setExtent([11236542.810958, 1502731.784523, 11270308.390144, 1525381.123647]);
 var wms_layers = [];
 
 
@@ -53,33 +53,28 @@ var lyr__3 = new ol.layer.Vector({
                 source:jsonSource__3, 
                 style: style__3,
                 popuplayertitle: "พานทอง",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/_3.png" /> พานทอง'
             });
-var format___4 = new ol.format.GeoJSON();
-var features___4 = format___4.readFeatures(json___4, 
+var format__4 = new ol.format.GeoJSON();
+var features__4 = format__4.readFeatures(json__4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource___4 = new ol.source.Vector({
+var jsonSource__4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource___4.addFeatures(features___4);
-var lyr___4 = new ol.layer.Vector({
+jsonSource__4.addFeatures(features__4);
+var lyr__4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource___4, 
-                style: style___4,
-                popuplayertitle: "พานทอง_แพ้",
+                source:jsonSource__4, 
+                style: style__4,
+                popuplayertitle: "ประชากรพานทอง",
                 interactive: false,
-    title: 'พานทอง_แพ้<br />\
-    <img src="styles/legend/__4_0.png" /> 0 - 11<br />\
-    <img src="styles/legend/__4_1.png" /> 11 - 21<br />\
-    <img src="styles/legend/__4_2.png" /> 21 - 31<br />\
-    <img src="styles/legend/__4_3.png" /> 31 - 41<br />\
-    <img src="styles/legend/__4_4.png" /> 41 - 51<br />\
-    <img src="styles/legend/__4_5.png" /> 51 - 61<br />\
-    <img src="styles/legend/__4_6.png" /> 61 - 71<br />\
-    <img src="styles/legend/__4_7.png" /> 71 - 81<br />\
-    <img src="styles/legend/__4_8.png" /> 81 - 91<br />\
-    <img src="styles/legend/__4_9.png" /> 91 - 100<br />'
+    title: 'ประชากรพานทอง<br />\
+    <img src="styles/legend/_4_0.png" /> 471 - 691<br />\
+    <img src="styles/legend/_4_1.png" /> 691 - 978<br />\
+    <img src="styles/legend/_4_2.png" /> 978 - 1366<br />\
+    <img src="styles/legend/_4_3.png" /> 1366 - 3374<br />\
+    <img src="styles/legend/_4_4.png" /> 3374 - 4986<br />'
         });
 var format___5 = new ol.format.GeoJSON();
 var features___5 = format___5.readFeatures(json___5, 
@@ -92,9 +87,9 @@ var lyr___5 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource___5, 
                 style: style___5,
-                popuplayertitle: "พานทอง_ชนะ",
+                popuplayertitle: "พานทอง_แพ้",
                 interactive: false,
-    title: 'พานทอง_ชนะ<br />\
+    title: 'พานทอง_แพ้<br />\
     <img src="styles/legend/__5_0.png" /> 0 - 11<br />\
     <img src="styles/legend/__5_1.png" /> 11 - 21<br />\
     <img src="styles/legend/__5_2.png" /> 21 - 31<br />\
@@ -106,21 +101,49 @@ var lyr___5 = new ol.layer.Vector({
     <img src="styles/legend/__5_8.png" /> 81 - 91<br />\
     <img src="styles/legend/__5_9.png" /> 91 - 100<br />'
         });
+var format___6 = new ol.format.GeoJSON();
+var features___6 = format___6.readFeatures(json___6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource___6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource___6.addFeatures(features___6);
+var lyr___6 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource___6, 
+                style: style___6,
+                popuplayertitle: "พานทอง_ชนะ",
+                interactive: false,
+    title: 'พานทอง_ชนะ<br />\
+    <img src="styles/legend/__6_0.png" /> 0 - 11<br />\
+    <img src="styles/legend/__6_1.png" /> 11 - 21<br />\
+    <img src="styles/legend/__6_2.png" /> 21 - 31<br />\
+    <img src="styles/legend/__6_3.png" /> 31 - 41<br />\
+    <img src="styles/legend/__6_4.png" /> 41 - 51<br />\
+    <img src="styles/legend/__6_5.png" /> 51 - 61<br />\
+    <img src="styles/legend/__6_6.png" /> 61 - 71<br />\
+    <img src="styles/legend/__6_7.png" /> 71 - 81<br />\
+    <img src="styles/legend/__6_8.png" /> 81 - 91<br />\
+    <img src="styles/legend/__6_9.png" /> 91 - 100<br />'
+        });
 
-lyr_GoogleMaps_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr___2.setVisible(true);lyr__3.setVisible(true);lyr___4.setVisible(true);lyr___5.setVisible(true);
-var layersList = [lyr_GoogleMaps_0,lyr_GoogleSatellite_1,lyr___2,lyr__3,lyr___4,lyr___5];
+lyr_GoogleMaps_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr___2.setVisible(true);lyr__3.setVisible(true);lyr__4.setVisible(true);lyr___5.setVisible(true);lyr___6.setVisible(true);
+var layersList = [lyr_GoogleMaps_0,lyr_GoogleSatellite_1,lyr___2,lyr__3,lyr__4,lyr___5,lyr___6];
 lyr___2.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'P_CODE': 'P_CODE', 'A_CODE': 'A_CODE', 'T_CODE': 'T_CODE', 'P_NAME_T': 'P_NAME_T', 'P_NAME_E': 'P_NAME_E', 'A_NAME_T': 'A_NAME_T', 'A_NAME_E': 'A_NAME_E', 'T_NAME_T': 'T_NAME_T', 'T_NAME_E': 'T_NAME_E', });
 lyr__3.set('fieldAliases', {'AP_IDN': 'AP_IDN', 'AP_CODE': 'AP_CODE', 'AP_TN': 'AP_TN', 'AP_EN': 'AP_EN', 'PV_IDN': 'PV_IDN', 'PV_CODE': 'PV_CODE', 'PV_TN': 'PV_TN', 'PV_EN': 'PV_EN', 'RE_NESDB': 'RE_NESDB', 'RE_ROYIN': 'RE_ROYIN', 'AreaShape': 'AreaShape', 'ADMIN_TYPE': 'ADMIN_TYPE', });
-lyr___4.set('fieldAliases', {'เขต�': 'เขต�', 'อำเ�': 'อำเ�', 'ตำบ�': 'ตำบ�', 'หมู�': 'หมู�', 'หน่�': 'หน่�', 'สถา�': 'สถา�', 'ผู้�': 'ผู้�', 'ผู��_1': 'ผู��_1', 'ก้า�': 'ก้า�', 'เพื�': 'เพื�', 'รวม�': 'รวม�', 'พลั�': 'พลั�', 'ประ�': 'ประ�', 'ภูม�': 'ภูม�', 'ไทย�': 'ไทย�', 'อื่�': 'อื่�', 'พรร�': 'พรร�', 'lat': 'lat', 'lon': 'lon', 'รว��_1': 'รว��_1', 'per': 'per', });
+lyr__4.set('fieldAliases', {'เขต�': 'เขต�', 'อำเ�': 'อำเ�', 'ตำบ�': 'ตำบ�', 'หมู�': 'หมู�', 'หน่�': 'หน่�', 'สถา�': 'สถา�', 'ผู้�': 'ผู้�', 'ผู��_1': 'ผู��_1', 'ก้า�': 'ก้า�', 'เพื�': 'เพื�', 'รวม�': 'รวม�', 'พลั�': 'พลั�', 'ประ�': 'ประ�', 'ภูม�': 'ภูม�', 'ไทย�': 'ไทย�', 'อื่�': 'อื่�', 'พรร�': 'พรร�', 'lat': 'lat', 'lon': 'lon', });
 lyr___5.set('fieldAliases', {'เขต�': 'เขต�', 'อำเ�': 'อำเ�', 'ตำบ�': 'ตำบ�', 'หมู�': 'หมู�', 'หน่�': 'หน่�', 'สถา�': 'สถา�', 'ผู้�': 'ผู้�', 'ผู��_1': 'ผู��_1', 'ก้า�': 'ก้า�', 'เพื�': 'เพื�', 'รวม�': 'รวม�', 'พลั�': 'พลั�', 'ประ�': 'ประ�', 'ภูม�': 'ภูม�', 'ไทย�': 'ไทย�', 'อื่�': 'อื่�', 'พรร�': 'พรร�', 'lat': 'lat', 'lon': 'lon', 'รว��_1': 'รว��_1', 'per': 'per', });
+lyr___6.set('fieldAliases', {'เขต�': 'เขต�', 'อำเ�': 'อำเ�', 'ตำบ�': 'ตำบ�', 'หมู�': 'หมู�', 'หน่�': 'หน่�', 'สถา�': 'สถา�', 'ผู้�': 'ผู้�', 'ผู��_1': 'ผู��_1', 'ก้า�': 'ก้า�', 'เพื�': 'เพื�', 'รวม�': 'รวม�', 'พลั�': 'พลั�', 'ประ�': 'ประ�', 'ภูม�': 'ภูม�', 'ไทย�': 'ไทย�', 'อื่�': 'อื่�', 'พรร�': 'พรร�', 'lat': 'lat', 'lon': 'lon', 'รว��_1': 'รว��_1', 'per': 'per', });
 lyr___2.set('fieldImages', {'OBJECTID': 'Range', 'P_CODE': 'TextEdit', 'A_CODE': 'TextEdit', 'T_CODE': 'TextEdit', 'P_NAME_T': 'TextEdit', 'P_NAME_E': 'TextEdit', 'A_NAME_T': 'TextEdit', 'A_NAME_E': 'TextEdit', 'T_NAME_T': 'TextEdit', 'T_NAME_E': 'TextEdit', });
 lyr__3.set('fieldImages', {'AP_IDN': 'Range', 'AP_CODE': 'TextEdit', 'AP_TN': 'TextEdit', 'AP_EN': 'TextEdit', 'PV_IDN': 'Range', 'PV_CODE': 'TextEdit', 'PV_TN': 'TextEdit', 'PV_EN': 'TextEdit', 'RE_NESDB': 'TextEdit', 'RE_ROYIN': 'TextEdit', 'AreaShape': 'TextEdit', 'ADMIN_TYPE': 'Range', });
-lyr___4.set('fieldImages', {'เขต�': 'TextEdit', 'อำเ�': 'TextEdit', 'ตำบ�': 'TextEdit', 'หมู�': 'TextEdit', 'หน่�': 'TextEdit', 'สถา�': 'TextEdit', 'ผู้�': 'TextEdit', 'ผู��_1': 'TextEdit', 'ก้า�': 'TextEdit', 'เพื�': 'TextEdit', 'รวม�': 'TextEdit', 'พลั�': 'TextEdit', 'ประ�': 'TextEdit', 'ภูม�': 'TextEdit', 'ไทย�': 'TextEdit', 'อื่�': 'TextEdit', 'พรร�': 'TextEdit', 'lat': 'TextEdit', 'lon': 'TextEdit', 'รว��_1': 'TextEdit', 'per': 'TextEdit', });
+lyr__4.set('fieldImages', {'เขต�': 'TextEdit', 'อำเ�': 'TextEdit', 'ตำบ�': 'TextEdit', 'หมู�': 'TextEdit', 'หน่�': 'TextEdit', 'สถา�': 'TextEdit', 'ผู้�': 'TextEdit', 'ผู��_1': 'TextEdit', 'ก้า�': 'TextEdit', 'เพื�': 'TextEdit', 'รวม�': 'TextEdit', 'พลั�': 'TextEdit', 'ประ�': 'TextEdit', 'ภูม�': 'TextEdit', 'ไทย�': 'TextEdit', 'อื่�': 'TextEdit', 'พรร�': 'TextEdit', 'lat': 'TextEdit', 'lon': 'TextEdit', });
 lyr___5.set('fieldImages', {'เขต�': 'TextEdit', 'อำเ�': 'TextEdit', 'ตำบ�': 'TextEdit', 'หมู�': 'TextEdit', 'หน่�': 'TextEdit', 'สถา�': 'TextEdit', 'ผู้�': 'TextEdit', 'ผู��_1': 'TextEdit', 'ก้า�': 'TextEdit', 'เพื�': 'TextEdit', 'รวม�': 'TextEdit', 'พลั�': 'TextEdit', 'ประ�': 'TextEdit', 'ภูม�': 'TextEdit', 'ไทย�': 'TextEdit', 'อื่�': 'TextEdit', 'พรร�': 'TextEdit', 'lat': 'TextEdit', 'lon': 'TextEdit', 'รว��_1': 'TextEdit', 'per': 'TextEdit', });
+lyr___6.set('fieldImages', {'เขต�': 'TextEdit', 'อำเ�': 'TextEdit', 'ตำบ�': 'TextEdit', 'หมู�': 'TextEdit', 'หน่�': 'TextEdit', 'สถา�': 'TextEdit', 'ผู้�': 'TextEdit', 'ผู��_1': 'TextEdit', 'ก้า�': 'TextEdit', 'เพื�': 'TextEdit', 'รวม�': 'TextEdit', 'พลั�': 'TextEdit', 'ประ�': 'TextEdit', 'ภูม�': 'TextEdit', 'ไทย�': 'TextEdit', 'อื่�': 'TextEdit', 'พรร�': 'TextEdit', 'lat': 'TextEdit', 'lon': 'TextEdit', 'รว��_1': 'TextEdit', 'per': 'TextEdit', });
 lyr___2.set('fieldLabels', {'OBJECTID': 'no label', 'P_CODE': 'no label', 'A_CODE': 'no label', 'T_CODE': 'no label', 'P_NAME_T': 'no label', 'P_NAME_E': 'no label', 'A_NAME_T': 'no label', 'A_NAME_E': 'no label', 'T_NAME_T': 'no label', 'T_NAME_E': 'no label', });
 lyr__3.set('fieldLabels', {'AP_IDN': 'no label', 'AP_CODE': 'no label', 'AP_TN': 'no label', 'AP_EN': 'no label', 'PV_IDN': 'no label', 'PV_CODE': 'no label', 'PV_TN': 'no label', 'PV_EN': 'no label', 'RE_NESDB': 'no label', 'RE_ROYIN': 'no label', 'AreaShape': 'no label', 'ADMIN_TYPE': 'no label', });
-lyr___4.set('fieldLabels', {'เขต�': 'no label', 'อำเ�': 'no label', 'ตำบ�': 'no label', 'หมู�': 'no label', 'หน่�': 'no label', 'สถา�': 'no label', 'ผู้�': 'no label', 'ผู��_1': 'no label', 'ก้า�': 'no label', 'เพื�': 'no label', 'รวม�': 'no label', 'พลั�': 'no label', 'ประ�': 'no label', 'ภูม�': 'no label', 'ไทย�': 'no label', 'อื่�': 'no label', 'พรร�': 'no label', 'lat': 'no label', 'lon': 'no label', 'รว��_1': 'no label', 'per': 'no label', });
+lyr__4.set('fieldLabels', {'เขต�': 'no label', 'อำเ�': 'no label', 'ตำบ�': 'no label', 'หมู�': 'no label', 'หน่�': 'no label', 'สถา�': 'no label', 'ผู้�': 'no label', 'ผู��_1': 'no label', 'ก้า�': 'no label', 'เพื�': 'no label', 'รวม�': 'no label', 'พลั�': 'no label', 'ประ�': 'no label', 'ภูม�': 'no label', 'ไทย�': 'no label', 'อื่�': 'no label', 'พรร�': 'no label', 'lat': 'no label', 'lon': 'no label', });
 lyr___5.set('fieldLabels', {'เขต�': 'no label', 'อำเ�': 'no label', 'ตำบ�': 'no label', 'หมู�': 'no label', 'หน่�': 'no label', 'สถา�': 'no label', 'ผู้�': 'no label', 'ผู��_1': 'no label', 'ก้า�': 'no label', 'เพื�': 'no label', 'รวม�': 'no label', 'พลั�': 'no label', 'ประ�': 'no label', 'ภูม�': 'no label', 'ไทย�': 'no label', 'อื่�': 'no label', 'พรร�': 'no label', 'lat': 'no label', 'lon': 'no label', 'รว��_1': 'no label', 'per': 'no label', });
-lyr___5.on('precompose', function(evt) {
+lyr___6.set('fieldLabels', {'เขต�': 'no label', 'อำเ�': 'inline label - visible with data', 'ตำบ�': 'no label', 'หมู�': 'no label', 'หน่�': 'no label', 'สถา�': 'no label', 'ผู้�': 'no label', 'ผู��_1': 'no label', 'ก้า�': 'no label', 'เพื�': 'no label', 'รวม�': 'no label', 'พลั�': 'no label', 'ประ�': 'no label', 'ภูม�': 'no label', 'ไทย�': 'no label', 'อื่�': 'no label', 'พรร�': 'no label', 'lat': 'no label', 'lon': 'no label', 'รว��_1': 'no label', 'per': 'no label', });
+lyr___6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
